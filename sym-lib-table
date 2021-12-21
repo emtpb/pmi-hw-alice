@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name pmi-hw-alice-rescue)(type Legacy)(uri ${KIPRJMOD}/pmi-hw-alice-rescue.lib)(options "")(descr ""))
+)
