@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "PMI-ALICE"
 Date "2021-04-19"
-Rev "V 1.1"
+Rev "V 1.2"
 Comp "Paderborn University - Measurement Engineering Group"
 Comment1 ""
 Comment2 ""
@@ -59,13 +59,13 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 607FE4AD
-P 1800 1000
-F 0 "#FLG01" H 1800 1075 50  0001 C CNN
-F 1 "PWR_FLAG" H 1800 1174 50  0000 C CNN
-F 2 "" H 1800 1000 50  0001 C CNN
-F 3 "~" H 1800 1000 50  0001 C CNN
-	1    1800 1000
-	1    0    0    -1  
+P 1850 1000
+F 0 "#FLG01" H 1850 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 1174 50  0000 C CNN
+F 2 "" H 1850 1000 50  0001 C CNN
+F 3 "~" H 1850 1000 50  0001 C CNN
+	1    1850 1000
+	-1   0    0    1   
 $EndComp
 $Comp
 L pmi-hw-alice-rescue:Pmod-Interface-I2C6-Pmod-Interface-emt J2
@@ -753,31 +753,31 @@ $EndComp
 NoConn ~ 1400 3650
 NoConn ~ 1400 3550
 Wire Wire Line
-	700  3950 700  4000
-Connection ~ 700  3950
+	700  4900 700  4950
+Connection ~ 700  4900
 Wire Wire Line
-	1100 3950 700  3950
+	1100 4900 700  4900
 Wire Wire Line
-	1100 4000 1100 3950
+	1100 4950 1100 4900
 Wire Wire Line
-	700  4350 700  4400
-Connection ~ 700  4350
+	700  5300 700  5350
+Connection ~ 700  5300
 Wire Wire Line
-	1100 4350 1100 4300
+	1100 5300 1100 5250
 Wire Wire Line
-	700  4350 1100 4350
+	700  5300 1100 5300
 $Comp
 L Device:C C3
 U 1 1 60803AD1
-P 1100 4150
-F 0 "C3" H 1215 4196 50  0000 L CNN
-F 1 "100n" H 1215 4105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1138 4000 50  0001 C CNN
-F 3 "~" H 1100 4150 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN " Manufacturer Part No "
-F 5 "" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "" H 0   0   50  0001 C CNN "Mouser Part No "
-	1    1100 4150
+P 1100 5100
+F 0 "C3" H 1215 5146 50  0000 L CNN
+F 1 "100n" H 1215 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1138 4950 50  0001 C CNN
+F 3 "~" H 1100 5100 50  0001 C CNN
+F 4 "" H 0   950 50  0001 C CNN " Manufacturer Part No "
+F 5 "" H 0   950 50  0001 C CNN "Manufacturer"
+F 6 "" H 0   950 50  0001 C CNN "Mouser Part No "
+	1    1100 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -817,43 +817,43 @@ SCL
 Text Label 1350 2950 2    50   ~ 0
 SDA
 Wire Wire Line
-	700  4300 700  4350
+	700  5250 700  5300
 Wire Wire Line
-	700  3900 700  3950
+	700  4850 700  4900
 $Comp
 L Device:C C2
 U 1 1 607FF564
-P 700 4150
-F 0 "C2" H 815 4196 50  0000 L CNN
-F 1 "100n" H 815 4105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 738 4000 50  0001 C CNN
-F 3 "~" H 700 4150 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN " Manufacturer Part No "
-F 5 "" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "" H 0   0   50  0001 C CNN "Mouser Part No "
-	1    700  4150
+P 700 5100
+F 0 "C2" H 815 5146 50  0000 L CNN
+F 1 "100n" H 815 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 738 4950 50  0001 C CNN
+F 3 "~" H 700 5100 50  0001 C CNN
+F 4 "" H 0   950 50  0001 C CNN " Manufacturer Part No "
+F 5 "" H 0   950 50  0001 C CNN "Manufacturer"
+F 6 "" H 0   950 50  0001 C CNN "Mouser Part No "
+	1    700  5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 607FF55E
-P 700 4400
-F 0 "#PWR08" H 700 4150 50  0001 C CNN
-F 1 "GND" H 705 4227 50  0000 C CNN
-F 2 "" H 700 4400 50  0001 C CNN
-F 3 "" H 700 4400 50  0001 C CNN
-	1    700  4400
+P 700 5350
+F 0 "#PWR08" H 700 5100 50  0001 C CNN
+F 1 "GND" H 705 5177 50  0000 C CNN
+F 2 "" H 700 5350 50  0001 C CNN
+F 3 "" H 700 5350 50  0001 C CNN
+	1    700  5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR07
 U 1 1 607FF558
-P 700 3900
-F 0 "#PWR07" H 700 3750 50  0001 C CNN
-F 1 "+3V3" H 715 4073 50  0000 C CNN
-F 2 "" H 700 3900 50  0001 C CNN
-F 3 "" H 700 3900 50  0001 C CNN
-	1    700  3900
+P 700 4850
+F 0 "#PWR07" H 700 4700 50  0001 C CNN
+F 1 "+3V3" H 715 5023 50  0000 C CNN
+F 2 "" H 700 4850 50  0001 C CNN
+F 3 "" H 700 4850 50  0001 C CNN
+	1    700  4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -901,20 +901,14 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR015
 U 1 1 609A31E8
-P 2100 1000
-F 0 "#PWR015" H 2100 850 50  0001 C CNN
-F 1 "+3V3" H 2115 1173 50  0000 C CNN
-F 2 "" H 2100 1000 50  0001 C CNN
-F 3 "" H 2100 1000 50  0001 C CNN
-	1    2100 1000
+P 1850 950
+F 0 "#PWR015" H 1850 800 50  0001 C CNN
+F 1 "+3V3" H 1865 1123 50  0000 C CNN
+F 2 "" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0001 C CNN
+	1    1850 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 1000 1800 1050
-Wire Wire Line
-	1800 1050 2100 1050
-Wire Wire Line
-	2100 1050 2100 1000
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 6082ACBF
@@ -1052,8 +1046,6 @@ Wire Wire Line
 	1400 6250 1450 6250
 Wire Wire Line
 	1450 5700 1400 5700
-Wire Wire Line
-	1400 5700 1400 5650
 Wire Notes Line
 	550  7250 3250 7250
 Wire Notes Line
@@ -1072,4 +1064,59 @@ Wire Notes Line
 	5400 3450 4350 3450
 Wire Notes Line
 	4350 3450 4350 4200
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 61BE16A6
+P 900 4050
+F 0 "J5" H 900 3850 50  0000 C CNN
+F 1 "Reset" H 950 4200 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 900 4050 50  0001 C CNN
+F 3 "~" H 900 4050 50  0001 C CNN
+	1    900  4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 3850 1100 3950
+Connection ~ 1100 3850
+$Comp
+L power:GND #PWR011
+U 1 1 61BE68F4
+P 1100 4100
+F 0 "#PWR011" H 1100 3850 50  0001 C CNN
+F 1 "GND" H 1105 3927 50  0000 C CNN
+F 2 "" H 1100 4100 50  0001 C CNN
+F 3 "" H 1100 4100 50  0001 C CNN
+	1    1100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4050 1100 4100
+$Comp
+L power:GND #PWR0105
+U 1 1 61BFA5EE
+P 2200 1000
+F 0 "#PWR0105" H 2200 750 50  0001 C CNN
+F 1 "GND" H 2205 827 50  0000 C CNN
+F 2 "" H 2200 1000 50  0001 C CNN
+F 3 "" H 2200 1000 50  0001 C CNN
+	1    2200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61BFBBD6
+P 2200 950
+F 0 "#FLG0102" H 2200 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 1123 50  0000 C CNN
+F 2 "" H 2200 950 50  0001 C CNN
+F 3 "~" H 2200 950 50  0001 C CNN
+	1    2200 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 950  2200 1000
+Wire Wire Line
+	1850 950  1850 1000
+Wire Wire Line
+	1400 5700 1400 5650
 $EndSCHEMATC

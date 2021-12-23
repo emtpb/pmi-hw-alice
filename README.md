@@ -22,3 +22,6 @@ found [here](bom/ibom.html).
 
 ## V1.1
 * First release.
+
+## V1.2
+* Add reset bridge to be able to reset the ic at power up
