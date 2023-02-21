@@ -17,11 +17,15 @@ found [here](bom/ibom.html).
 
 # Changelog
 
-## V1.0
-* First prototype.
+## 1.0
+* First prototype
 
-## V1.1
-* First release.
+## 1.1
+* First release
 
-## V1.2
+## 1.2
 * Add reset bridge to be able to reset the ic at power up
+
+## 1.3
+* Convert project to Kicad 6
+* Round pcb corners
