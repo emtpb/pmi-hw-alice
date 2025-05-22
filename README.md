@@ -12,8 +12,9 @@ Pin header and sockets are compatible with
 The board can be used with [PMI's BoB²](https://github.com/emtpb/pmi-hw-bob2)
 pcb.
 
-An interactive html BOM file with pcb layout and material placement can be
-found [here](bom/ibom.html).
+# Interactive BOM
+
+An interactive html BOM page with pcb layout and material placement can be found [here](https://emtpb.github.io/pmi-hw-alice/bom/ibom.html).
 
 # Changelog
 
